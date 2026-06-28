@@ -316,12 +316,12 @@
       color: #4a4640;
       line-height: 1.35;
     }
-    .product-note {
-      font-family: 'Cormorant', serif;
-      font-style: italic;
-      font-size: 12.5px;
+    .product-brand {
+      font-family: 'Gowun Batang', serif;
+      font-size: 11.5px;
+      letter-spacing: 0.02em;
       color: #a39a8a;
-      margin-top: 1px;
+      margin-top: 3px;
     }
 
     .sub-back-footer {
@@ -382,31 +382,11 @@
     <div class="link-stack">
 
       <button class="link-card" onclick="showCollection('pick')">
-        <div class="link-thumb"><img src="assets/stainedglass.jpg" alt="이달의 픽"></div>
+        <div class="link-thumb"><img src="assets/item1.jpg" alt="이달의 픽"></div>
         <div class="link-body">
           <div class="link-kicker">this month</div>
           <div class="link-title">이달의 픽</div>
           <div class="link-sub">이번 호에서 소개한 물건들</div>
-        </div>
-        <svg class="link-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84aa9e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </button>
-
-      <button class="link-card" onclick="showCollection('summer')">
-        <div class="link-thumb"><img src="assets/waterlily.jpg" alt="여름 에디트"></div>
-        <div class="link-body">
-          <div class="link-kicker">summer edit</div>
-          <div class="link-title">여름 에디트</div>
-          <div class="link-sub">여름 내내 곁에 둔 것들</div>
-        </div>
-        <svg class="link-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84aa9e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </button>
-
-      <button class="link-card" onclick="showCollection('archive')">
-        <div class="link-thumb"><img src="assets/illus.jpg" alt="지난 호 아카이브"></div>
-        <div class="link-body">
-          <div class="link-kicker">archive</div>
-          <div class="link-title">지난 호 아카이브</div>
-          <div class="link-sub">예전 포스트에서 모은 즐겨찾기</div>
         </div>
         <svg class="link-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84aa9e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
       </button>
@@ -463,38 +443,15 @@
       title: '이달의 픽',
       intro: '사진을 누르면 구매처로 이동해요.',
       products: [
-        { img: 'assets/stainedglass.jpg', name: '스테인드글라스 패널',     note: 'vintage glass',    url: '#' },
-        { img: 'assets/mobile.jpg',       name: '레이스 & 참 모빌',         note: 'handmade mobile',  url: '#' },
-        { img: 'assets/orchid.jpg',       name: '유리 난초 오브제',          note: 'glass object',     url: '#' },
-        { img: 'assets/gate.jpg',         name: '플라워 아이언 게이트 프린트', note: 'art print',        url: '#' },
-        { img: 'assets/tile.jpg',         name: '파스텔 타일 코스터',        note: 'ceramic',          url: '#' },
-        { img: 'assets/seasonal.jpg',     name: '칠십이후 리소 포스터',      note: 'riso print',       url: '#' }
-      ]
-    },
-    summer: {
-      kicker: 'summer edit',
-      title: '여름 에디트',
-      intro: '사진을 누르면 구매처로 이동해요.',
-      products: [
-        { img: 'assets/waterlily.jpg', name: '수련 엽서 세트',      note: 'postcard set', url: '#' },
-        { img: 'assets/shells.jpg',    name: '불가사리 비즈 가랜드', note: 'garland',      url: '#' },
-        { img: 'assets/garden.jpg',    name: '수국 정원 필름 프린트', note: 'film print',   url: '#' },
-        { img: 'assets/booth.jpg',     name: '여름 공중전화 포스터', note: 'poster',       url: '#' },
-        { img: 'assets/envelope.jpg',  name: '여름의 끝 레터셋',    note: 'stationery',   url: '#' },
-        { img: 'assets/deer.jpg',      name: '사슴 필름 엽서',      note: 'postcard',     url: '#' }
-      ]
-    },
-    archive: {
-      kicker: 'archive',
-      title: '지난 호 아카이브',
-      intro: '사진을 누르면 구매처로 이동해요.',
-      products: [
-        { img: 'assets/illus.jpg',       name: '보태니컬 일러스트 A3',  note: 'art print',  url: '#' },
-        { img: 'assets/beadcurtain.jpg', name: '실버 비즈 커튼',        note: 'interior',   url: '#' },
-        { img: 'assets/tex-green.jpg',   name: '리노컷 허브 패턴 천',   note: 'fabric',     url: '#' },
-        { img: 'assets/tex-blue.jpg',    name: '물결 리소 패턴 포스터', note: 'riso print', url: '#' },
-        { img: 'assets/orchid.jpg',      name: '유리 난초 오브제',      note: 'glass object', url: '#' },
-        { img: 'assets/shells.jpg',      name: '불가사리 비즈 가랜드',  note: 'garland',    url: '#' }
+        { img: 'assets/item1.jpg', name: '모리츠 린넨 가디건',                    brand: '모래하우스', url: 'https://s.zigzag.kr/abr/jUbjbdbcqs' },
+        { img: 'assets/item2.jpg', name: '빅토리 보트넥 시스루 니트',             brand: '미리내로',   url: 'https://s.zigzag.kr/abr/66QNZ4Po2h' },
+        { img: 'assets/item3.jpg', name: '아일 웨이비 볼레로',                    brand: '모래하우스', url: 'https://s.zigzag.kr/abr/fVuoYOC41v' },
+        { img: 'assets/item4.jpg', name: 'tie scarf CD',                          brand: '김아홉',     url: 'https://s.zigzag.kr/abr/Zj3WUgyb2Q' },
+        { img: 'assets/item5.jpg', name: 'bright pintuck cardigan',              brand: '김아홉',     url: 'https://s.zigzag.kr/abr/LuqIOFDxGO' },
+        { img: 'assets/item6.jpg', name: '료카 썸머 레이어드 브이넥 랩 후드 니트', brand: '바온',       url: 'https://s.zigzag.kr/abr/sYBtDQnrOy' },
+        { img: 'assets/item7.jpg', name: '랑비 페이즐리 바람막이',                brand: '미리내로',   url: 'https://s.zigzag.kr/abr/sRKXldIVHH' },
+        { img: 'assets/item8.jpg', name: '페스츄리 가디건',                       brand: '오운마인드', url: 'https://s.zigzag.kr/abr/mW9ROyuJtl' },
+        { img: 'assets/item9.jpg', name: '히피 패턴 시스루 후드 여름가디건',       brand: '신시',       url: 'https://s.zigzag.kr/abr/8YnFJEqoFp' }
       ]
     }
   };
@@ -527,12 +484,12 @@
       const safeUrl = p.url.replace(/"/g, '&quot;');
       const safeImg = p.img.replace(/"/g, '&quot;');
       const safeName = p.name.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-      const safeNote = p.note.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+      const safeBrand = p.brand.replace(/&/g, '&amp;').replace(/</g, '&lt;');
       return `<a href="${safeUrl}" target="_blank" rel="noopener" class="product-card">
         <div class="product-img" style="background-image:url('${safeImg}')"></div>
         <div class="product-info">
           <div class="product-name">${safeName}</div>
-          <div class="product-note">${safeNote}</div>
+          <div class="product-brand">${safeBrand}</div>
         </div>
       </a>`;
     }).join('');
